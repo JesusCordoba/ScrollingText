@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary"
+        android:textColor="@android:color/white"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="@string/title" />
+
+
+    <ScrollView android:layout_width="wrap_content"
+        android:id="@+id/scroll"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/subheading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:padding="10dp"
+                android:text="@string/subtitle" />
+            <EditText
+                android:id="@+id/plain_text_input"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:inputType="text|textMultiLine"
+                android:gravity="top"
+                android:enabled="false"
+                android:text="@string/text"/>
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/comentario" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
